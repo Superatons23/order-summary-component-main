@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  /*PRIMARY */
+  --pale-blue-primary: hsl(225, 100%, 94%);
+  --bright-blue-primary: hsl(245, 75%, 52%);
+
+  /*NEUTRAL*/
+  --very-pale-pale-neutral: hsl(225, 100%, 98%);
+  --desaturated-blue-neutral: hsl(224, 23%, 55%);
+  --dark-blue-neutral: hsl(223, 47%, 23%);
+  font-size: 16px;
+
+  --bright-blue-secondary: #766cf1;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: var(--pale-blue-primary) !important;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card-text {
+  font-weight: 500;
+  color: var(--desaturated-blue-neutral);
+  line-height: 1.6em;
+}
+.annual-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.price-text {
+  color: var(--desaturated-blue-neutral);
+}
+
+.info-plan {
+  background-color: var(--very-pale-pale-neutral);
+  border-radius: 10px;
+}
+.card {
+  border-radius: 1.2rem;
+}
+
+.card-img-top {
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+/*BUTTONS*/
+.btn-payment {
+  background-color: var(--bright-blue-primary);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px rgba(118, 108, 241, 0.29);
+}
+
+.btn-payment:hover {
+  background-color: var(--bright-blue-secondary);
+}
+
+.btn-cancel-order {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--desaturated-blue-neutral);
+}
+.btn-cancel-order:hover {
+  color: var(--dark-blue-neutral);
+  text-decoration: none;
+}
+
+.btn-change {
+  text-decoration: underline;
+  color: var(--bright-blue-primary);
+  font-weight: 600;
+}
+.btn-change:hover {
+  text-decoration: none;
+  color: var(--bright-blue-secondary);
+}
+
+/*QUERIES*/
+@media (max-width: 700px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: repeat-x;
+  }
+}
